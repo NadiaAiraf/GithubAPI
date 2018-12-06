@@ -20,7 +20,6 @@ class Interaction(unittest.TestCase):
     #
     #     self.assertEqual(languages, ['hello'])
 
-
     def test_return_languages(self):
         client_api = ClientApi()
         json_string = '[{"language":"Javascript"}]'
