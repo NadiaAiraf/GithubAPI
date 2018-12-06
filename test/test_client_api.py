@@ -12,6 +12,15 @@ class Interaction(unittest.TestCase):
             response = client_api.make_api_request('nadiaairaf')
         assert_is_not_none(response)
 
+    # def test_return_repo_languages(self):
+    #     client_api = ClientApi()
+    #     with patch('lib.client_api.requests.get') as mock_get:
+    #         mock_get.text = '[{"language":"Javascript"}]'
+    #         languages = client_api.return_repo_languages('nadiaairaf')
+    #
+    #     self.assertEqual(languages, ['hello'])
+
+
     def test_return_languages(self):
         client_api = ClientApi()
         json_string = '[{"language":"Javascript"}]'

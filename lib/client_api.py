@@ -6,8 +6,8 @@ class ClientApi:
     def __init__(self):
         self.response = None
 
-    def return_repo_languages(self, username):
-        return return_languages(make_api_request(username))
+    def return_repo_languages(self, username='nadiaairaf'):
+        return self.return_languages(self.make_api_request(username))
 
     def make_api_request(self, username):
         url = "https://api.github.com/users/" + username + "/repos"
