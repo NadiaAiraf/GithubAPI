@@ -10,4 +10,5 @@ class Display:
         return self.username
 
     def return_favourite_language(self, string):
+        print('---')
         print(self.username + "'s favourite language is " + string)
