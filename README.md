@@ -6,10 +6,13 @@ I don't have a huge amount of experience with Python but I decided to use it to 
 
 ## How to run
 
+This assumes you already have python installed, if not you can find instructions [here](https://www.python.org/downloads/):
+
 1. save these files locally
 2. navigate into the folder on the command line
-3. enter into the command line `python run_app`
-4. enter the Github username you would like information on
+3. install any packages you need `pip install -r requirements.txt`
+4. enter into the command line `python run_app`
+5. enter the Github username you would like information on
 
 ## Example
 
@@ -34,6 +37,6 @@ coverage run --source=lib -m unittest && coverage report
 
 ## Problems to overcome
 
-- More work is needed on how to use mocks in Python. Calls to Githubs API were successfully mocked during tests which is great. However, mocking of instance methods in the controller class specifically gave issues.
+- More work is needed on how to use mocks in Python. Calls to Githubs API were successfully mocked during tests which is great. However, mocking of instance methods in the controller class specifically gave issues. There is an instance of one of the tests that gave me trouble with mocks in the `test_controller.py` file.
 - The Github API only gives you a certain number of calls per day without authentication. I had planned to add functionality that would ask you to authenticate if it reached it's limit for the day but ran out of time with the mock testing.
 - If given an actual user name the program works, if given a username that doesn't exist the program crashes. Again I had planned to add edge cases for this but was hindered by testing on the MVP.
