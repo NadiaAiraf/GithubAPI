@@ -14,6 +14,5 @@ class Controller:
     def run_app(self):
         username = self.display.get_search_word()
         languages = self.client_api.return_repo_languages(username)
-        # print(self.client_api)
         favourite_language = self.favourite_language(languages)
         self.display.return_favourite_language(favourite_language)
