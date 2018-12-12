@@ -1,5 +1,3 @@
-import getpass
-
 class Display:
     def __init__(self):
         self.username = None
